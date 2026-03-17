@@ -1,0 +1,37 @@
+{
+  "name": "General",
+  "description": "Group chat",
+  "visibility": "private",
+  "config": {
+    "display": { "sort": "desc" },
+    "types": {
+      "message": {
+        "schema": {
+          "type": "object",
+          "required": ["body"],
+          "properties": {
+            "body": { "type": "string" },
+            "attachments": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["url", "mime_type"],
+                "properties": {
+                  "url": { "type": "string" },
+                  "mime_type": { "type": "string" },
+                  "preview_url": { "type": "string" },
+                  "content_size": { "type": "integer" }
+                }
+              }
+            }
+          }
+        }
+      },
+      "reaction": {
+        "schema": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
