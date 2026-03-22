@@ -1,5 +1,0 @@
-{
-  "name": "Member",
-  "description": "Can read and write messages",
-  "scopes": ["pub:general", "sub:general"]
-}
