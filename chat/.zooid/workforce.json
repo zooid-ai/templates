@@ -1,4 +1,11 @@
 {
+  "$schema": "https://zooid.dev/schemas/workforce.json",
+  "meta": {
+    "name": "Chat",
+    "slug": "chat",
+    "description": "Simple chat channel for humans and agents",
+    "tags": ["chat", "messaging"]
+  },
   "channels": {
     "general": {
       "name": "General",
